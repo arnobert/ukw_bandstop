@@ -1,0 +1,264 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5EEE0A87
+P 2450 2800
+F 0 "J1" H 2378 3038 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2378 2947 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 2450 2800 50  0001 C CNN
+F 3 " ~" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5EEE0F1E
+P 6800 2800
+F 0 "J2" H 6900 2775 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6900 2684 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 6800 2800 50  0001 C CNN
+F 3 " ~" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EEE13FC
+P 3350 3200
+F 0 "C1" V 3098 3200 50  0000 C CNN
+F 1 "82pF" V 3189 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 3050 50  0001 C CNN
+F 3 "~" H 3350 3200 50  0001 C CNN
+	1    3350 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5EEE16B0
+P 3350 2550
+F 0 "L1" V 3540 2550 50  0000 C CNN
+F 1 "27nH" V 3449 2550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3350 2550 50  0001 C CNN
+F 3 "~" H 3350 2550 50  0001 C CNN
+	1    3350 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 2800 2950 2800
+Wire Wire Line
+	2950 2800 2950 2550
+Wire Wire Line
+	2950 2550 3200 2550
+Wire Wire Line
+	2950 2800 2950 3200
+Wire Wire Line
+	2950 3200 3200 3200
+Connection ~ 2950 2800
+$Comp
+L Device:L L2
+U 1 1 5EEE4A43
+P 3850 3600
+F 0 "L2" H 3902 3646 50  0000 L CNN
+F 1 "140nH" H 3902 3555 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3850 3600 50  0001 C CNN
+F 3 "~" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EEE4DEB
+P 3850 4050
+F 0 "C2" H 3735 4004 50  0000 R CNN
+F 1 "20pF" H 3735 4095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3888 3900 50  0001 C CNN
+F 3 "~" H 3850 4050 50  0001 C CNN
+	1    3850 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EEE5220
+P 3850 4400
+F 0 "#PWR02" H 3850 4150 50  0001 C CNN
+F 1 "GND" H 3855 4227 50  0000 C CNN
+F 2 "" H 3850 4400 50  0001 C CNN
+F 3 "" H 3850 4400 50  0001 C CNN
+	1    3850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4400 3850 4200
+Wire Wire Line
+	3850 3900 3850 3750
+Wire Wire Line
+	3500 2550 3500 2800
+Wire Wire Line
+	3500 2800 3850 2800
+Wire Wire Line
+	3850 2800 3850 3450
+Wire Wire Line
+	3500 3200 3500 2800
+Connection ~ 3500 2800
+$Comp
+L Device:C C3
+U 1 1 5EEE6E37
+P 4650 3200
+F 0 "C3" V 4398 3200 50  0000 C CNN
+F 1 "39pF" V 4489 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4688 3050 50  0001 C CNN
+F 3 "~" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5EEE6E3D
+P 4650 2550
+F 0 "L3" V 4840 2550 50  0000 C CNN
+F 1 "68nH" V 4749 2550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2800 4250 2550
+Wire Wire Line
+	4250 2550 4500 2550
+Wire Wire Line
+	4250 2800 4250 3200
+Wire Wire Line
+	4250 3200 4500 3200
+Connection ~ 4250 2800
+Wire Wire Line
+	4800 2550 4800 2800
+Wire Wire Line
+	4800 3200 4800 2800
+Connection ~ 4800 2800
+$Comp
+L Device:C C5
+U 1 1 5EEE8165
+P 6000 3200
+F 0 "C5" V 5748 3200 50  0000 C CNN
+F 1 "39pF" V 5839 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 3050 50  0001 C CNN
+F 3 "~" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 5EEE816B
+P 6000 2550
+F 0 "L5" V 6190 2550 50  0000 C CNN
+F 1 "68nH" V 6099 2550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 2550 50  0001 C CNN
+F 3 "~" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2550
+Wire Wire Line
+	5600 2550 5850 2550
+Wire Wire Line
+	5600 2800 5600 3200
+Wire Wire Line
+	5600 3200 5850 3200
+Connection ~ 5600 2800
+Wire Wire Line
+	6150 2550 6150 2800
+Wire Wire Line
+	6150 3200 6150 2800
+Connection ~ 6150 2800
+$Comp
+L Device:L L4
+U 1 1 5EEE8A28
+P 5200 3600
+F 0 "L4" H 5252 3646 50  0000 L CNN
+F 1 "140nH" H 5252 3555 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5200 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EEE8A32
+P 5200 4050
+F 0 "C4" H 5085 4004 50  0000 R CNN
+F 1 "20pF" H 5085 4095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5238 3900 50  0001 C CNN
+F 3 "~" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 4400 5200 4200
+Wire Wire Line
+	5200 3900 5200 3750
+Wire Wire Line
+	5200 2800 5200 3450
+Wire Wire Line
+	3850 2800 4250 2800
+Connection ~ 3850 2800
+Wire Wire Line
+	4800 2800 5200 2800
+Wire Wire Line
+	5200 2800 5600 2800
+Connection ~ 5200 2800
+$Comp
+L power:GND #PWR03
+U 1 1 5EEEB6A9
+P 5200 4400
+F 0 "#PWR03" H 5200 4150 50  0001 C CNN
+F 1 "GND" H 5205 4227 50  0000 C CNN
+F 2 "" H 5200 4400 50  0001 C CNN
+F 3 "" H 5200 4400 50  0001 C CNN
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5EEEC890
+P 6800 3100
+F 0 "#PWR04" H 6800 2850 50  0001 C CNN
+F 1 "GND" H 6805 2927 50  0000 C CNN
+F 2 "" H 6800 3100 50  0001 C CNN
+F 3 "" H 6800 3100 50  0001 C CNN
+	1    6800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EEECAEF
+P 2450 3100
+F 0 "#PWR01" H 2450 2850 50  0001 C CNN
+F 1 "GND" H 2455 2927 50  0000 C CNN
+F 2 "" H 2450 3100 50  0001 C CNN
+F 3 "" H 2450 3100 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2800 6600 2800
+Wire Wire Line
+	6800 3100 6800 3000
+Wire Wire Line
+	2450 3100 2450 3000
+$EndSCHEMATC
