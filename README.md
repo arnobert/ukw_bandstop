@@ -1,5 +1,5 @@
 # ukw_bandstop
-## Bandstop filter on a small PCB to eliminate strong UKW (87.5 - 108 MHz) broadcast signals.
+## Bandstop filter on a small PCB to eliminate strong VHF FM radio (87.5 - 108 MHz) broadcast signals.
 
 FM radio broadcast signals are usually really strong compared to e.g. ham radio short wave signals. The FM signals can cause massive intermodulation in SDRs, LimeSDR in my case. So I designed a small prototype of a filter for these frequencies.
 
